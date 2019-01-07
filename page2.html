@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Movies</title>
+</head> 
+<body>
+	<header class ="top">
+			<h1 class ="headerText">Menu</h1>
+			<nav class = "headerMenu" >
+				<ul>
+					<li><a href = "page1.html">Home</a></li>
+					<li><a href = "page2.html">Movies</a></li>
+					<li><a href = "page1.html#contactTag">Contact</a></li>
+					
+				</ul>
+			</nav>
+	</header>
+	<nav class="menu">
+		<div class = "IncarcareMeniu"> 
+			<button id = "IncarcareFilme">Incarca filmele din baza de date</button>
+		</div>
+		
+		<div class = "StergereMeniu">
+			<button id = "StergereFilm">Sterge un film din lista</button>
+			<input id="InputStergereFilm" type="text" name="SelectedMovie" size="6" placeholder = "Id film">
+		</div>
+		<div class = "EditareMeniuDescriereFilm">
+			<button id = "EditareButon">Editeaza descrierea unui film</button>
+			<input id="EditareInput" placeholder = "Id film" type="text" name="SelectedMovie2" size="6">
+			
+		</div>
+		<textarea id = "EditareTextarea" placeholder = "Your description goes here ....." cols = "70" rows = "3"></textarea>
+
+		<div class = "AdaugaFilmMenu">
+			<button id = "AdaugaFilmButon">Adauga filmul</button>
+			<input id="AdaugaFilmInput" placeholder = "Nume film" type="text"  size="6">
+			
+		</div>
+		<textarea id = "AdaugaFilmTextarea" placeholder = "Your description goes here ....." cols = "70" rows = "3"></textarea>
+	</nav>
+	
+	
+	<h2 id = "listaFilme">Lista filme: </h2>
+	<div id ="movieInfo"> </div>
+	
+	
+
+
+<script src="main.js"></script>
+</body>

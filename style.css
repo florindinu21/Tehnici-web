@@ -1,0 +1,325 @@
+ *{
+	margin: 0; padding:0;
+}
+
+.top{
+	background-color:#000;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	
+}
+
+button:hover{
+	 
+  background-color: #555555;
+  color: white;
+
+}
+button {
+	
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding:10px;
+}
+
+
+.headerText{
+	color:#fff;
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;	
+	font-size :40px;
+	padding: 18px;
+	text-transform:uppercase;
+}
+.headerMenu{
+	-webkit-flex: 3;
+	-webkit-box-flex: 3;
+	-ms-flex:3;
+	flex: 3;
+}
+.headerMenu ul{
+	display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	list-style: none;
+	margin-top: 30px;
+	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow:row wrap;
+	-ms-flex-flow: row wrap;
+	
+}
+.headerMenu ul li{
+	flex:1;
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	text-align: center;
+
+}
+.headerMenu ul li a{
+	color: #fff;
+	font-size:20px;
+	text-decoration: none;
+}
+.banner{
+	background:url("banner.jpg");
+	width: 100%;
+	height: 100%;
+	background-size:cover;
+	
+	
+}
+.bannerText{
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	padding: 25% 0;
+	
+}
+.bannerTextItems{
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	width: 50%;
+}
+.bannerTextItems h2{
+	font-size:5em;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-family:"Comic Sans MS";
+}
+.bannerTextItems p{
+	font-size: 27px;
+}
+.mainContent{
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow:row wrap;
+	-ms-flex-flow: row wrap;
+	padding: 5% 0;
+	flex-flow: row wrap;
+
+}
+.main1{
+    -webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+	padding: 3%;
+	text-align: center;
+	
+}
+.main1 h2{
+	font-size:3em;
+	margin-bottom: 10px;
+	
+}
+.main1 p{
+	font-size: 27px;
+	
+}
+.contact{
+	background: url("contact.jpg");
+	padding: 80px 0;
+	position:relative;
+	z-index: 1;
+	background-size:cover;
+}
+
+.contactItems{
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-bot-align: center;
+	-webkit-align-items:center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction: column;
+	flex-direction:column;
+}
+.contactItems h2{
+	color: black;
+	font-size: 40px;
+	margin-bottom: 18px;
+}
+	input[type = "text"]{
+	border-radius: 10px;
+	margin-bottom:15px;
+	padding: 15px;
+}
+.contactItems input[type = "text"]{
+	border-radius: 10px;
+	margin-bottom:15px;
+	padding: 15px;
+	width: 50%
+}
+    textarea{
+	border-radius: 10px;
+	margin-bottom:15px;
+	padding: 15px;
+	width: 50%
+}
+
+.contactItems button{
+	background:#da4b29;
+	color:#fff;
+	display:block;
+	font-size: 20px;
+	margin-top:25px;
+	padding: 15px 80px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+.menu{
+	padding:10px;
+	background-color:#9BCBA2;
+}
+.menu div{
+	margin-bottom:20px;
+	
+}
+.menu textarea{
+	margin-bottom:20px;
+}
+
+#movieInfo{
+	
+	padding:10px;
+}
+#movieInfo p, #movieInfo span {
+	font-size:20px; 
+	
+  
+	
+}
+#movieInfo p{
+	padding:5px;
+}
+
+#movieInfo span {
+	font-weight:bold;
+}
+#listaFilme{
+	color:white;
+	background-color:black;
+	text-align:center;
+	font-size:35px;
+}
+
+
+
+@media screen and (max-width:768px){
+	.top{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+	.headerText{
+		padding:18px 0 0 ;
+		
+	}
+	.headerMenu ul{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction:column;
+		margin-top:0;
+	}
+	.headerMenu ul li{
+		padding: 5px;
+	}
+	.bannerTextItems{
+		width: 100%;
+	}
+	.bannerTextItems h2{
+		font-size: 1.5em;
+	}
+	.bannerTextItems p{
+	font-size: 18px;
+	}
+	.mainContent{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction:column;
+		
+		
+	}
+	.main1 h2{
+	font-size:2em;
+	margin-bottom: 10px;
+	
+	}
+	.main1 p{
+		font-size: 20px;
+		
+	}
+}
+@media (min-width: 768px) and (max-width: 1280px){
+
+	.top{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+	.headerText{
+		padding:18px 0 0 ;
+		
+	}
+	.headerMenu ul{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction:column;
+		margin-top:0;
+	}
+	.headerMenu ul li{
+		padding: 5px;
+	}
+	.bannerTextItems{
+		width: 100%;
+	}
+	.bannerTextItems h2{
+		font-size: 2.5em;
+	}
+	.mainContent{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction:column;
+		
+		
+	}
+}
+
+
+	
